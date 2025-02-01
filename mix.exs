@@ -57,7 +57,8 @@ defmodule BankAPI.MixProject do
       {:commanded, "~> 1.4.7"},
       {:eventstore, "~> 1.4.7"},
       {:commanded_eventstore_adapter, "~> 1.4.2"},
-      {:commanded_ecto_projections, "~> 1.4.0"}
+      {:commanded_ecto_projections, "~> 1.4.0"},
+      {:skooma, "~> 0.2.0"}
     ]
   end
 

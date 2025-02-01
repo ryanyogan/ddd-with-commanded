@@ -15,6 +15,20 @@ defmodule BankAPIWeb.FallbackController do
     |> render(:"422")
   end
 
+  def call(conn, {:error, :bad_command}) do
+    conn
+    |> put_status(:unprocessable_entity)
+    |> put_view(json: BankAPIWeb.ErrorJSON)
+    |> render(:"422")
+  end
+
+  def call(conn, {:error, :command_validation_failure, _command, _errors}) do
+    conn
+    |> put_status(:unprocessable_entity)
+    |> put_view(json: BankAPIWeb.ErrorJSON)
+    |> render(:"422")
+  end
+
   def call(conn, _error) do
     conn
     |> put_view(json: BankAPIWeb.ErrorJSON)
