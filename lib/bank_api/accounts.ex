@@ -4,7 +4,6 @@ defmodule BankAPI.Accounts do
   alias BankAPI.Accounts.Aggregates.Account
   alias BankAPI.Accounts.Commands.OpenAccount
   alias Commanded.UUID
-  alias Ecto.Changeset
   alias BankAPI.Repo
 
   def get_account(uuid), do: Repo.get!(Account, uuid)

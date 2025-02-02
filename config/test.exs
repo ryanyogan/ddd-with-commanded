@@ -13,7 +13,7 @@ config :bank_api, BankAPI.Repo,
   pool: Ecto.Adapters.SQL.Sandbox,
   pool_size: System.schedulers_online() * 2
 
-config :bank_api, BankAPI.Application,
+config :bank_api, BankAPI.Manager,
   event_store: [
     adapter: Commanded.EventStore.Adapters.InMemory,
     serializer: Commanded.Serialization.JsonSerializer

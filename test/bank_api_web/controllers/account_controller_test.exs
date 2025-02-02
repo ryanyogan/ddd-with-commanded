@@ -2,7 +2,7 @@ defmodule BankAPIWeb.AccountControllerTest do
   use BankAPIWeb.ConnCase
 
   @create_attrs %{
-    initial_balance: 42_000
+    initial_balance: 4_000
   }
 
   @invalid_attrs %{
@@ -24,7 +24,7 @@ defmodule BankAPIWeb.AccountControllerTest do
 
       assert %{
                "uuid" => _uuid,
-               "current_balance" => 4200
+               "current_balance" => 4_000
              } = json_response(conn, 201)["data"]
     end
 
