@@ -27,8 +27,8 @@ defmodule BankAPI.DataCase do
     end
   end
 
-  setup tags do
-    BankAPI.DataCase.setup_sandbox(tags)
+  setup do
+    # BankAPI.DataCase.setup_sandbox(tags)
     :ok
   end
 

@@ -1,6 +1,6 @@
 defmodule BankAPIWeb.AccountController do
   alias BankAPI.Accounts
-  alias BankAPI.Accounts.Aggregates.Account
+  alias BankAPI.Accounts.Projections.Account
   use BankAPIWeb, :controller
 
   action_fallback BankAPIWeb.FallbackController

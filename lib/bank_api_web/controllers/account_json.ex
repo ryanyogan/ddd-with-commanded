@@ -1,5 +1,5 @@
 defmodule BankAPIWeb.AccountJSON do
-  alias BankAPI.Accounts.Aggregates.Account
+  alias BankAPI.Accounts.Projections.Account
 
   def show(%{account: account}) do
     %{data: data(account)}

@@ -10,7 +10,6 @@ config :bank_api, BankAPI.Repo,
   password: "postgres",
   hostname: "localhost",
   database: "bank_api_test#{System.get_env("MIX_TEST_PARTITION")}",
-  pool: Ecto.Adapters.SQL.Sandbox,
   pool_size: System.schedulers_online() * 2
 
 config :bank_api, BankAPI.Manager,

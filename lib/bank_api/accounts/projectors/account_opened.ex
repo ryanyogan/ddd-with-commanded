@@ -1,5 +1,5 @@
 defmodule BankAPI.Accounts.Projectors.AccountOpened do
-  alias BankAPI.Accounts.Aggregates.Account
+  alias BankAPI.Accounts.Projections.Account
   alias BankAPI.Accounts.Events.AccountOpened
 
   use Commanded.Projections.Ecto,

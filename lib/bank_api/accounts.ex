@@ -1,7 +1,7 @@
 defmodule BankAPI.Accounts do
   import Ecto.Query, warn: false
 
-  alias BankAPI.Accounts.Aggregates.Account
+  alias BankAPI.Accounts.Projections.Account
   alias BankAPI.Accounts.Commands.OpenAccount
   alias Commanded.UUID
   alias BankAPI.Repo
